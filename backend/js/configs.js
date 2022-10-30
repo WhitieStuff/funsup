@@ -10,57 +10,57 @@ let dbs = {
   1: {
     main: {
       user: 'dbrep',
-      db: 'funsupprod'
+      db: 'funreplacedprod'
     },
     log: {
       user: 'dblog1',
-      db: 'funsupprod'
+      db: 'funreplacedprod'
     },
     mr: {
       user: 'dblog4',
-      db: 'funsupprod'
+      db: 'funreplacedprod'
     },
     loyalty: {
       user: 'dbloyaltyrep',
-      db: 'bonussupprod'
+      db: 'bonusreplacedprod'
     }
   },
   2: {
     main: {
       user: 'dbrep2',
-      db: 'funsupprod2'
+      db: 'funreplacedprod2'
     },
     log: {
       user: 'db2log2',
-      db: 'funsupprod2'
+      db: 'funreplacedprod2'
     },
     mr: {
       user: 'db2log4',
-      db: 'funsupprod2'
+      db: 'funreplacedprod2'
     },
     loyalty: {
       user: 'dbloyalty2rep',
-      db: 'bonussupprod2'
+      db: 'bonusreplacedprod2'
     }
   },
   3: {
     main: {
       user: 'dbrep3',
-      db: 'funsupprod3'
+      db: 'funreplacedprod3'
     },
     log: {
       user: 'db3log1',
-      db: 'funsupprod3'
+      db: 'funreplacedprod3'
     },
     mr: {
       user: 'db3log3',
-      db: 'funsupprod3'
+      db: 'funreplacedprod3'
     }
   },
   4: {
     main: {
       user: 'dbrep4',
-      db: 'funsupprod4'
+      db: 'funreplacedprod4'
     }
   }
 }
