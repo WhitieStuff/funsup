@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./3rd-parties/highlight/styles/github.min.css">
+    <script src="./3rd-parties/highlight/highlight.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/320d4c975a.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>FunSup</title>
+  </head>
+  <body>
+    <div id="wrapper" class="wrapper">
+      <nav class="nav">
+        <div class="logo">FunSup</div>
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="#duplicates" class="nav__link" w-for="duplicates"
+              ><i class="fa-solid fa-house fa-sm"></i>
+              <span class="nav__link-text">Duplicates</span></a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#merchants-settings"
+              class="nav__link"
+              w-for="merchants-settings"
+              ><i class="fa-solid fa-gears fa-sm"></i>
+              <span class="nav__link-text">Merchants settings</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <main class="main">
+      <section class="section" id="duplicates">
+        <h2 class="section__title">Duplicates</h2>
+        <div class="section__input-form">
+          <div class="section__input-field-wrapper">
+            <input
+              type="text"
+              class="section__input-field"
+              placeholder="User ID"
+            />
+            <button class="section__input-field-button">—</button>
+          </div>
+          <button
+            class="section__input-field-button button-add"
+            id="duplicates-add"
+          >
+            +
+          </button>
+        </div>
+        <div class="section__buttons">
+          <button class="button button_purple" id="duplicates-import">
+            Import
+          </button>
+          <button class="button button_white" id="duplicates-reset">
+            Reset
+          </button>
+          <button class="button" id="duplicates-execute">Execute</button>
+          <label for="duplicates-3" class="section__label">Node 3</label>
+          <input
+            type="radio"
+            name="duplicates"
+            id="duplicates-3"
+            value="duplicates-3"
+            class="section__radio"
+          />
+          <label for="duplicates-2" class="section__label">Node 2</label>
+          <input
+            type="radio"
+            name="duplicates"
+            id="duplicates-2"
+            value="duplicates-2"
+            class="section__radio"
+            checked
+          />
+          <label for="duplicates-1" class="section__label">Node 1</label>
+          <input
+            type="radio"
+            name="duplicates"
+            id="duplicates-1"
+            value="duplicates-1"
+            class="section__radio"
+          />
+        </div>
+      </section>
+      <section class="section" id="merchants-settings"></section>
+    </main>
+    <div class="modal-wrapper" id="modalDuplicates">
+      <div class="modal modal-duplicates">
+        <h3 class="modal__title">
+          Users bulk insert
+          <i class="fa-solid fa-xmark modal__close" for="modalDuplicates"></i>
+        </h3>
+        <div class="modal__body">
+          <label class="modal__label" for="duplicates-user-import"
+            >Users each on new line</label
+          >
+          <textarea
+            class="modal__textarea"
+            name="duplicates-user-import"
+            id="duplicates-user-import"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="modal__opion">
+            <input
+              class="user-row__checkbox"
+              type="checkbox"
+              name="duplicates-keep-data"
+              id="duplicates-keep-data"
+            />
+            <label class="user-row__label" for="duplicates-keep-data"
+              >Keep current fields</label
+            >
+            <div class="section__buttons modal__buttons">
+              <button class="button button_white" id="duplicates-modal-cancel">
+                Cancel
+              </button>
+              <button class="button" id="duplicates-modal-import">
+                Import
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
